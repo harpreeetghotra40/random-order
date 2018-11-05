@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Random Order</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo" data-scroll><img src="LOGO/Others Files/logo.png"></a>
+        <nav class="nav-collapse" id="nav-responsive">
+            <a href="#about" onclick="myFunction()" data-scroll>ABOUT</a>
+            <a href="#team" onclick="myFunction()" data-scroll>TEAM</a>
+            <a href="#research" onclick="myFunction()" data-scroll>RESEARCH</a>
+            <a href="contact.html" onclick="myFunction()" data-scroll>CONTACT</a>
+            <a href="#" onclick="myFunction()" id="menu-icon">
+                <i class="material-icons icon-white">menu</i>
+            </a>
+        </nav>
+    </header>
+    <section id="home">
+        <img src="images/ai.png">
+
+        <form class="initial-contact">
+            <input type="text" placeholder="name@comapny.com">
+            <button id="get-in-touch"> Get in Touch </button><br>
+        </form>
+        <p class="main-quote">
+            Random Order specializes in highly scalable machine-learning methodologies.
+
+            <p>
+                <p class="sub-quote">
+                    We collaborate with our clients to create profoundly distinctive
+                    machine-learning algorithms that precisely address their specific needs.
+                </p>
+    </section>
+
+    <section id="about">
+        <p class="main-quote">ABOUT OUR COMPANY</p>
+        <p class="sub-quote">
+            We were among the pioneers who defined the fields of artificial intelligence
+            and machine learning long before they became popular buzz-words.
+        </p>
+        <div class="content-handler">
+            <div class="content">
+                <div class="content-graphic"><img src="images/about-section.jpg"></div>
+                <div class="content-description">
+                    <p class="content-title">
+                        Financial Markets
+                    </p>
+                    <ul class="actual-content">
+                        <li>Built automated robotic trading system based on machine reading of live news and various
+                            financial reports.</li>
+                        <li>
+                            Built multiple trading diagnostics, forward testing, back testing, feature correlation
+                            reduction.
+                        </li>
+                        <li>
+                            Designed a comprehensive non-parametric trading robot consisting of a battalion of
+                            intelligent trading agents who collected data, reduced model complexity, compensated for
+                            degrees of freedom, built and validated hypotheses, and side-stepped the curse of
+                            dimensionality.
+                        </li>
+                        <li>
+                            Our lead Machine Learning Engineer was a quantitative analyst at D.E. Shaw.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-description" id = "content-description">
+                    <p class="content-title">
+                        Game Theory
+                    </p>
+                    <ul class="actual-content">
+                        <li>Computed the Nash equilibrium of dozens games including: Pai Gow Tiles, Pia Gow Poker, twenty versions of CA blackjack, Booray, and several heads up variations of poker.</li>
+                        <li>We won a Gold Medal for the most innovative gaming product at the American Gaming Summit in Las Vegas.</li>
+                        <li>Devised a game theoretic algorithm for competing slot machine teams. The algorithm was successfully employed by a large, successful slot team.</li>
+                        <li>Developed many ways to exploit inefficiencies in non-random shuffling procedures. See “How the Pro’s Win Millions” an Esquire cover story on our blackjack system in play.</li>
+                        <li>Developed and patented optimal poker equations. Solving final round equilibrium for equal and skewed distribution contests.</li>
+
+                    </ul>
+                </div>
+                <div class="content-graphic" id = "content-graphic"><img src="images/about-section.jpg"></div>
+            </div>
+            <div class="content">
+                <div class="content-graphic"><img src="images/about-section.jpg"></div>
+                <div class="content-description">
+                    <p class="content-title">
+                        Computer Vision
+                    </p> 
+                    <ul class="actual-content">
+                        <li>Designed the BST Scan IOS application that allows an anthropologist to collect and record data about a child with simple touch based input.</li>
+                        <li> As data is entered, it is automatically synced to the cloud or can be uploaded at a later date.</li>
+                        <li>It there are any abnormalities in the measurements, the measurer is notified.</li>
+                        <li>The measurer can capture 2D (photograph) and 3D captures of the patient at various positions.</li>
+                        <li>The 3D scans are taken in quick bursts so an impatient child can be successfully modeled.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <p class="main-quote">MEET OUR TEAM</p>
+        <p class="sub-quote">
+            Our team consists of academics who have designed and built
+            battle tested, real world applications.
+        </p>
+        <div class="content-handler">
+            <div class="content">
+                <div class="profile-photo" onclick="displayPanel(0)"><img src="images/robertReitzan.jpg" width="100%"></div>
+                <div class="profile"><strong>Robert Reitzen</strong><br>Founder</div>
+            </div>
+            <div class="content">
+                <div class="profile-photo" onclick="displayPanel(1)"><img src="images/heinHundal.jpg" width="100%"></div>
+                <div class="profile"><strong>Dr. Hein S. Hundal</strong> <br>Chief Scientist and Partner</div>
+            </div>
+            <div class="content">
+                <div class="profile-photo" onclick="displayPanel(2)"><img src="images/andrewRaffensperger.jpg" width="100%"></div>
+                <div class="profile"><strong>Andrew Raffensperger</strong> <br>Engineer and Partner</div>
+            </div>
+            <div class="content">
+                <div class="profile-photo" onclick="displayPanel(3)"><img src="images/larissaPosner.jpg" width="100%"></div>
+                <div class="profile"><strong>Larrisa Posner</strong><br>Some Text Here</div>
+            </div>
+        </div>
+        <div id="displayPanel">
+            <span class="close" onclick="closePanel()">&times;</span>
+            <div>
+                <img class="displayPanel-image" id="display-image">
+            </div>
+            <div class="member-info">
+                <p id="team-member"></p>
+                <h5 id="team-position"></h5>
+                <p id="team-info"></p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>

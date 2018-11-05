@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: sans-serif;
+    color: #022E3E;
+    letter-spacing: 2px;
+}
+body{
+    margin-bottom: 10em;
+}
+section {
+    text-align: center;
+    padding-top: 5em;
+    position: relative;
+}
+
+/* Styling for the NavBar*/
+
+header {
+    top: 0;
+    z-index: 9999;
+    background:#022E3E;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 0px 8px 0px #999;
+}
+
+.logo {
+    text-decoration: none;
+    padding: 20px;
+    float: left;
+    background-color: #022E3E;
+    max-height: 20px;
+
+}
+.logo img{
+    width: 200px;
+    margin-top: -70px;
+}
+
+.nav-collapse{
+    float: right;
+    margin-right: 20px;
+}
+
+.nav-collapse a{
+    max-width: 200px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 25px;
+    color: white;
+}
+
+#menu-icon{
+    padding: 20px;
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .nav-collapse a:not(:nth-child(5)) {display: none;}
+    #menu-icon {
+      display: block;
+      float: right;
+      position: fixed;
+      top: 0;
+      right: 0;
+    }
+    i.icon-white{
+        color: white;
+    }
+    .logo{
+        width: 100%;
+    }
+    .responsive{
+       position: relative;
+       background-color: #022E3E;
+       margin-top: 60px;
+    }
+    .responsive a{
+        display: block;
+        text-decoration: none;
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+    }
+    
+}
+
+/* Styling for the NavBar ends ------------------------*/ 
+
+
+/* Home Section styling------------*/
+
+#home img{
+    margin-top: 2em;
+    width: 15%;
+}
+
+.initial-contact{
+    text-align: center;
+    margin: 3em auto;
+}
+input[type=text] {
+    width: 500px;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 2px solid #DBE0E4;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 200;
+}input[type=text]:focus{
+    outline: none;
+}input::placeholder{
+    color: rgb(179, 184, 187);
+}input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+#get-in-touch{
+    padding: 12px 30px;
+    margin-left: 1.5em;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-weight: 200;
+    font-size: 14px;
+    border: 2px solid #022E3E;
+    background-color: #fff;
+}button:focus{
+    outline: none;
+}
+
+.main-quote{
+    margin: 1em 4em 0 4em;
+    font-weight: 300;
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+.sub-quote{
+    margin: 0.5em 8em 0 8em;
+    font-size: 1.2em;
+    font-weight: 200;
+    color: #646F79;
+    line-height: 2em;
+}
+
+@media screen and (max-width: 750px) {
+    .initial-contact{
+        width: 100%;
+        margin: 2em 0em;
+        margin-left: 1em;
+    }
+    input[type=text]{
+        width: 100%;
+    }
+    #get-in-touch{
+        width: 100%;
+        margin-top: 10px;
+        margin-left: auto;
+    }
+    .main-quote{
+        font-size: 1em;  
+        margin: 0;
+        margin-top: 1em;
+        margin-left: 2em;
+    }
+    .sub-quote{
+        font-size: 0.9em;
+        font-weight: 100;
+        margin: 0;
+        margin-left: 2em;
+    }
+    #home img{
+        width: 30%;
+        margin: 1em;
+        padding-left: 1em;
+    }
+   
+}
+
+/* end of Home Section styling------------*/
+
+/*About Section styling------------*/
+#about .content{
+    padding: 1em 1em;
+    width: 90%;
+    max-width: 1300px;
+    overflow: hidden;
+}
+
+.content-graphic img{
+    width: 50%;
+    float: left;
+}
+.content-description{
+    float: right;
+    width: 45%;
+    text-align: left;
+    margin-top: 2em;
+}
+#content-graphic img{
+    width: 50%;
+    float: right;
+}
+#content-description{
+    float: left;
+    width: 45%;
+    text-align: left;
+    margin-top: 2em;
+}
+.content-title{
+    font-size: 2em;
+    line-height: 2em;
+    color: #0084BD;
+    letter-spacing: 0px;
+}
+.actual-content{
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: 100;
+}
+.actual-content li{
+    letter-spacing: 1px;
+}
+@media screen and (max-width: 1024px){
+    .content-title{
+        font-size: 1.3em;
+        line-height: 1.5em;
+    }
+    .actual-content{
+        line-height: 1.5em;
+    }
+}
+@media screen and (max-width: 750px){
+    .content-graphic img{
+        display: none;
+    }
+    .content-description{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #content-graphic img{
+        display: none;
+    }
+    #content-description{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+/* end of About Section styling------------*/
+
+/* Team Section styling------------*/
+
+.content-handler{
+    margin-top: 3em;
+}
+
+.content{
+    display: inline-block;
+    margin: 0em 1.5em 3em 1.5em;
+}
+
+.profile-photo{
+    width: 270px;
+    height: 360px;
+    border-radius: 4px;
+    background-color: #796EFF;
+}
+
+.profile{
+    color: #022E3E;
+    font-weight: lighter;
+    margin-top: 1em;
+}
+
+@media screen and (max-width: 1024px) {
+    .profile-photo{
+        width: 330px;
+        height: 440px;
+    }
+    .profile{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .profile-photo{
+        width: 360px;
+        height: 480px;
+    }
+    .profile{
+        font-size: 1em;
+    }
+}
+
+/* end of Team Section styling------------*/
+
+.close {
+    position: absolute;
+    top: 70px;
+    right: 35px;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+#displayPanel {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: #fff;
+}
+
+.displayPanel-image {
+    float: left;
+    display: block;
+    width: 360px;
+    height: 480px;
+    padding: 2em 2em 2em 15%;
+}
+.member-info{
+    padding:  0 10%;
+    margin-left: 30em;
+    text-align: left;
+    line-height: 2em;
+    margin-top: 2em;
+}
+#team-member{
+    font-size: 2em;
+}
+#team-position{
+    color: #646F79;
+}
+#team-info{
+   color: #555;
+}
+@media screen and (max-width: 1000px){
+    .displayPanel-image{
+        width: 300px;
+        height: 400px;
+    }
+    .member-info{
+        margin-left: 25em;
+        line-height: 1.5em;
+    }
+    #team-member{
+        font-size: 1.5em;
+    }
+    #team-info{
+        font-size: 0.9em;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    .displayPanel-image{
+        display: none;
+    }
+    .member-info{
+        text-align: center;
+        margin: auto;
+        padding: auto;
+        line-height: 2em;
+    }
+    #team-member{
+        font-size: 1.5em;
+    }
+    #team-info{
+        font-size: 0.9em;
+    }
+}
+/*------Reserach section starts----------*/
+
+.research-class{
+    margin-top: 5em;
+}
+
+.research-photo{
+    float: left;
+    width: 60%;
+}
+
+.research-photo img{
+    width: 700px;
+}
+
+.description{
+    text-align: left;
+    float: left;
+    width: 30%;
+}
+
+.description-heading{
+    font-size: 2em;
+    font-weight: 200;
+}
+
+.description-content{
+    margin-top: 2em;
+    font-size: 0.9em;
+    color: #646F79;
+    line-height: 1.5em;
+}
+
+/*------Reserach section ends----------*/
+
+.contact-heading{
+    margin: 1em 0 ;
+    font-size: 1em;
+    color: #646F79;
+    text-align: center;
+}
+
+#contact-form{
+    text-align: center;
+    margin-left: 25%;
+    width: 50%;
+    text-align: left;
+    float: left;
+}
+
+label, input {
+    display: block;
+}
+
+label {
+    margin-bottom: 30px;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px 10px;
+    display: inline-block;
+    border: 2px solid #DBE0E4;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    color: #022E3E;
+    font-weight: 200;
+    height: 200px;
+}
+#contact-submit{
+    padding: 12px 30px;
+    box-sizing: border-box;
+    font-weight: 200;
+    font-size: 14px;
+    background-color: #fff;
+    color: white;
+    background-color: #022E3E;
+}button:focus{
+    outline: none;
+}
+
+@media screen and (max-width: 1000px){
+   #contact-form{
+    margin: 0 5%;
+    width: 90%;
+    }
+}
+

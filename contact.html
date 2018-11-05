@@ -1,0 +1,57 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo" data-scroll><img src = "LOGO/Others Files/logo.png"></a>
+        <nav class="nav-collapse" id="nav-responsive">
+            <a href="index.html#about" data-scroll>ABOUT</a>
+            <a href="index.html#team" data-scroll>TEAM</a>
+            <a href="index.html#research" data-scroll>RESEARCH</a>
+            <a href="#contact" data-scroll>CONTACT</a>
+            <a href="#" onclick="myFunction()" id="menu-icon">
+                <i class="material-icons icon-white">menu</i>
+            </a>
+        </nav>
+    </header>
+    <section id="contact">
+        <h1 class="heading">CONTACT</h1>
+        <p class="contact-heading">Please fill out the form below and be as specific as possible with your request.<br>
+            An asterisk indicates a
+            required field.
+        </p>
+        <form id="contact-form" action="javascript:completeAndRedirect();">
+            <label>
+                Name *<br><br>
+                <input type="text" name="name" id = "contact-name"placeholder="John Doe"><br>
+            </label>
+            <label>
+                Email *<br><br>
+                <input type="text" name="email" id = "contact-email" placeholder="name@comapany.com"><br>
+            </label>
+            <label>
+                Phone Number *<br><br>
+                <input type="text" name="phoneNumber" id = "contact-phone" placeholder="999 999 9999"><br>
+            </label>
+            <label>
+                Message *<br><br>
+                <textarea required id = "contact-message">
+
+                    </textarea>
+            </label>
+            <input type = "submit" id = "contact-submit"> </button>
+        </form>
+    </section>
+</body>
+
+</html>
