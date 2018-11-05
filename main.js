@@ -36,6 +36,3 @@ function closePanel(){
     x.style.display = "none";
 }
 
-function completeAndRedirect(){
-    window.open('mailto:test@example.com?subject=subject&body=body');
-}
