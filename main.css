@@ -8,7 +8,7 @@
 }
 body{
     margin-bottom: 10em;
-    background-color: #022E3E;
+    background-color: #2c2e3b;
 }
 section {
     text-align: center;
@@ -21,7 +21,7 @@ section {
 header {
     top: 0;
     z-index: 9999;
-    background:#022E3E;
+    background:#2c2e3b;
     position: fixed;
     width: 100%;
     box-shadow: 0px 0px 8px 0px #999;
@@ -31,7 +31,7 @@ header {
     text-decoration: none;
     padding: 20px;
     float: left;
-    background-color: #022E3E;
+    background-color: #2c2e3b;
     max-height: 20px;
 
 }
@@ -75,7 +75,7 @@ header {
     }
     .responsive{
        position: relative;
-       background-color: #022E3E;
+       background-color: #2c2e3b;
        margin-top: 60px;
     }
     .responsive a{
@@ -244,9 +244,8 @@ input[type=text], input[type=email] {
 
 .profile-photo{
     width: 270px;
-    height: 360px;
+    height: 270px;
     border-radius: 4px;
-    background-color: #5298ce;
     overflow: hidden;
 }
 
@@ -258,7 +257,7 @@ input[type=text], input[type=email] {
 @media screen and (max-width: 1024px) {
     .profile-photo{
         width: 330px;
-        height: 440px;
+        height: 330px;
     }
     .profile{
         font-size: 0.8em;
@@ -268,7 +267,7 @@ input[type=text], input[type=email] {
 @media screen and (max-width: 750px){
     .profile-photo{
         width: 360px;
-        height: 480px;
+        height: 360px;
     }
     .profile{
         font-size: 1em;
@@ -297,14 +296,14 @@ input[type=text], input[type=email] {
     width: 100%; 
     height: 100%; 
     overflow: auto; 
-    background-color: #022E3E;
+    background-color: #2c2e3b;
 }
 
 .displayPanel-image {
     float: left;
     display: block;
     width: 330px;
-    height: 480px;
+    height: 330px;
     padding: 2em 2em 2em 15%;
 }
 .member-info{
@@ -359,40 +358,7 @@ input[type=text], input[type=email] {
         font-size: 0.9em;
     }
 }
-/*------Reserach section starts----------*/
-
-.research-class{
-    margin-top: 5em;
-}
-
-.research-photo{
-    float: left;
-    width: 60%;
-}
-
-.research-photo img{
-    width: 700px;
-}
-
-.description{
-    text-align: left;
-    float: left;
-    width: 30%;
-}
-
-.description-heading{
-    font-size: 2em;
-    font-weight: 200;
-}
-
-.description-content{
-    margin-top: 2em;
-    font-size: 0.9em;
-    color: #646F79;
-    line-height: 1.5em;
-}
-
-/*------Reserach section ends----------*/
+/*--------------------------------*/
 
 .contact-heading{
     margin: 1em 0 ;
@@ -411,7 +377,7 @@ input[type=text], input[type=email] {
 
 label, input {
     display: block;
-    color: #022E3E;
+    color: #2c2e3b;
 }
 
 label {
@@ -426,7 +392,7 @@ textarea{
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 1.2em;
-    color: #022E3E;
+    color: #2c2e3b;
     font-weight: 200;
     height: 200px;
 }
@@ -437,7 +403,7 @@ textarea{
     font-weight: 600;
     font-size: 14px;
     background-color: #fff;
-    color: #022E3E;
+    color: #2c2e3b;
 }button:focus{
     outline: none;
 }
