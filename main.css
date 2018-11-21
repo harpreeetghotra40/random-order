@@ -3,11 +3,12 @@
     padding: 0;
     border: 0;
     font-family: sans-serif;
-    color: #022E3E;
+    color: #fff;
     letter-spacing: 2px;
 }
 body{
     margin-bottom: 10em;
+    background-color: #022E3E;
 }
 section {
     text-align: center;
@@ -48,7 +49,7 @@ header {
     max-width: 200px;
     display: inline-block;
     text-decoration: none;
-    padding: 25px;
+    padding: 20px;
     color: white;
 }
 
@@ -57,8 +58,8 @@ header {
     display: none;
 }
 
-@media screen and (max-width: 900px) {
-    .nav-collapse a:not(:nth-child(5)) {display: none;}
+@media screen and (max-width: 1000px) {
+    .nav-collapse a:not(:nth-child(6)) {display: none;}
     #menu-icon {
       display: block;
       float: right;
@@ -93,14 +94,9 @@ header {
 /* Home Section styling------------*/
 
 #home img{
-    margin-top: 2em;
-    width: 15%;
+    width: 50%;
 }
 
-.initial-contact{
-    text-align: center;
-    margin: 3em auto;
-}
 input[type=text], input[type=email] {
     width: 500px;
     padding: 12px 20px;
@@ -118,22 +114,9 @@ input[type=text], input[type=email] {
     opacity: 0;
 }
 
-#get-in-touch{
-    padding: 12px 30px;
-    margin-left: 1.5em;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-weight: 200;
-    font-size: 14px;
-    border: 2px solid #022E3E;
-    background-color: #fff;
-}button:focus{
-    outline: none;
-}
-
 .main-quote{
     margin: 1em 4em 0 4em;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 2em;
     line-height: 1.5em;
 }
@@ -141,24 +124,13 @@ input[type=text], input[type=email] {
 .sub-quote{
     margin: 0.5em 8em 0 8em;
     font-size: 1.2em;
-    font-weight: 200;
-    color: #646F79;
+    font-weight: 400;
     line-height: 2em;
 }
 
 @media screen and (max-width: 750px) {
-    .initial-contact{
-        width: 100%;
-        margin: 2em 0em;
-        margin-left: 1em;
-    }
     input[type=text], input[type=email]{
         width: 100%;
-    }
-    #get-in-touch{
-        width: 100%;
-        margin-top: 10px;
-        margin-left: auto;
     }
     .main-quote{
         font-size: 1em;  
@@ -168,12 +140,12 @@ input[type=text], input[type=email] {
     }
     .sub-quote{
         font-size: 0.9em;
-        font-weight: 100;
+        font-weight: 500;
         margin: 0;
-        margin-left: 2em;
+        margin-left: 1em;
     }
     #home img{
-        width: 30%;
+        width: 60%;
         margin: 1em;
         padding-left: 1em;
     }
@@ -193,6 +165,7 @@ input[type=text], input[type=email] {
 .content-graphic img{
     width: 50%;
     float: left;
+    margin-top: 3em;
 }
 .content-description{
     float: right;
@@ -219,7 +192,7 @@ input[type=text], input[type=email] {
 .actual-content{
     font-size: 1em;
     line-height: 1.5em;
-    font-weight: 100;
+    font-weight: 400;
 }
 .actual-content li{
     letter-spacing: 1px;
@@ -273,11 +246,11 @@ input[type=text], input[type=email] {
     width: 270px;
     height: 360px;
     border-radius: 4px;
-    background-color: #796EFF;
+    background-color: #5298ce;
+    overflow: hidden;
 }
 
 .profile{
-    color: #022E3E;
     font-weight: lighter;
     margin-top: 1em;
 }
@@ -312,6 +285,7 @@ input[type=text], input[type=email] {
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
+    color: #fff;
 }
 #displayPanel {
     display: none; 
@@ -323,13 +297,13 @@ input[type=text], input[type=email] {
     width: 100%; 
     height: 100%; 
     overflow: auto; 
-    background-color: #fff;
+    background-color: #022E3E;
 }
 
 .displayPanel-image {
     float: left;
     display: block;
-    width: 360px;
+    width: 330px;
     height: 480px;
     padding: 2em 2em 2em 15%;
 }
@@ -344,11 +318,12 @@ input[type=text], input[type=email] {
     font-size: 2em;
 }
 #team-position{
-    color: #646F79;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-top: 0.5em ;
+    margin-bottom: 0.5em ;
 }
-#team-info{
-   color: #555;
-}
+
 @media screen and (max-width: 1000px){
     .displayPanel-image{
         width: 300px;
@@ -422,7 +397,6 @@ input[type=text], input[type=email] {
 .contact-heading{
     margin: 1em 0 ;
     font-size: 1em;
-    color: #646F79;
     text-align: center;
 }
 
@@ -432,10 +406,12 @@ input[type=text], input[type=email] {
     width: 50%;
     text-align: left;
     float: left;
+    
 }
 
 label, input {
     display: block;
+    color: #022E3E;
 }
 
 label {
@@ -458,11 +434,10 @@ textarea{
     padding: 12px 30px;
     margin-bottom: 10px;
     box-sizing: border-box;
-    font-weight: 200;
+    font-weight: 600;
     font-size: 14px;
     background-color: #fff;
-    color: white;
-    background-color: #022E3E;
+    color: #022E3E;
 }button:focus{
     outline: none;
 }
@@ -474,3 +449,13 @@ textarea{
     }
 }
 
+#clients div img{
+    width: 30%;
+    margin: 3em 2em;
+}
+@media screen and (max-width: 1000px){
+    #clients div img{
+        width: 70%;
+        margin-top: 1.5em;
+    }
+ }

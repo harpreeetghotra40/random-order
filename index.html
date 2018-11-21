@@ -15,9 +15,10 @@
     <header>
         <a href="index.html" class="logo" data-scroll><img src="LOGO/Others Files/logo.png"></a>
         <nav class="nav-collapse" id="nav-responsive">
-            <a href="#about" onclick="myFunction()" data-scroll>ABOUT</a>
+            <a href="#home" onclick="myFunction()" data-scroll>ABOUT</a>
+            <a href="#about" onclick="myFunction()" data-scroll>OUR WORK</a>
             <a href="#team" onclick="myFunction()" data-scroll>TEAM</a>
-            <a href="#research" onclick="myFunction()" data-scroll>RESEARCH</a>
+            <a href="#clients" onclick="myFunction()" data-scroll>CLIENTS</a>
             <a href="contact.html" onclick="myFunction()" data-scroll>CONTACT</a>
             <a href="#" onclick="myFunction()" id="menu-icon">
                 <i class="material-icons icon-white">menu</i>
@@ -25,31 +26,31 @@
         </nav>
     </header>
     <section id="home">
-        <img src="images/ai.png">
-
-        <form class="initial-contact">
-            <input type="text" placeholder="name@comapny.com">
-            <button id="get-in-touch"> Get in Touch </button><br>
-        </form>
+        <img src="LOGO/Others Files/logo-mainImage.png">
         <p class="main-quote">
-            Random Order specializes in highly scalable machine-learning methodologies.
-
-            <p>
+            Consulting
+        </p>
                 <p class="sub-quote">
-                    We collaborate with our clients to create profoundly distinctive
-                    machine-learning algorithms that precisely address their specific needs.
+                    We offer expert consulting to corporations, government agencies, non-profit organization
+                    and academic researchers facing complex data science problems.
                 </p>
+        <p class="main-quote">
+            Development
+        </p>
+        <p class="sub-quote">
+            We collaborate with our clients to create profoundly distinctive machine learning algorithms.
+            Our software is designed and built to precisely address their specific needs.
+        </p>
     </section>
 
     <section id="about">
-        <p class="main-quote">ABOUT OUR COMPANY</p>
+        <p class="main-quote">Research</p>
         <p class="sub-quote">
-            We were among the pioneers who defined the fields of artificial intelligence
-            and machine learning long before they became popular buzz-words.
+            Were most see confusion, we see patterns
         </p>
         <div class="content-handler">
             <div class="content">
-                <div class="content-graphic"><img src="images/about-section.jpg"></div>
+                <div class="content-graphic"><img src="images/financialMarkets.jpg"></div>
                 <div class="content-description">
                     <p class="content-title">
                         Financial Markets
@@ -87,10 +88,11 @@
 
                     </ul>
                 </div>
-                <div class="content-graphic" id = "content-graphic"><img src="images/about-section.jpg"></div>
+                <div class="content-graphic" id = "content-graphic"><img src="images/gameTheory.png"></div>
             </div>
+
             <div class="content">
-                <div class="content-graphic"><img src="images/about-section.jpg"></div>
+                <div class="content-graphic"><img src="images/computerVision.png"></div>
                 <div class="content-description">
                     <p class="content-title">
                         Computer Vision
@@ -115,20 +117,20 @@
         </p>
         <div class="content-handler">
             <div class="content">
-                <div class="profile-photo" onclick="displayPanel(0)"><img src="images/robertReitzan.jpg" width="100%"></div>
-                <div class="profile"><strong>Robert Reitzen</strong><br>Founder</div>
+                <div class="profile-photo" onclick="displayPanel(0)"><img src="images/robertReitzan.png" width="100%"></div>
+                <div class="profile"><strong>Robert Reitzen</strong><br>Founder, Chief AI Officer</div>
             </div>
             <div class="content">
-                <div class="profile-photo" onclick="displayPanel(1)"><img src="images/heinHundal.jpg" width="100%"></div>
-                <div class="profile"><strong>Dr. Hein S. Hundal</strong> <br>Chief Scientist and Partner</div>
+                <div class="profile-photo" onclick="displayPanel(1)"><img src="images/heinHundal.png" width="100%"></div>
+                <div class="profile"><strong>Dr. Hein S. Hundal</strong> <br>Chief Scientist</div>
             </div>
             <div class="content">
-                <div class="profile-photo" onclick="displayPanel(2)"><img src="images/andrewRaffensperger.jpg" width="100%"></div>
-                <div class="profile"><strong>Andrew Raffensperger</strong> <br>Engineer and Partner</div>
+                <div class="profile-photo" onclick="displayPanel(2)"><img src="images/andrewRaffensperger.png" width="100%"></div>
+                <div class="profile"><strong>Andrew Raffensperger</strong> <br>Software Engineer</div>
             </div>
             <div class="content">
-                <div class="profile-photo" onclick="displayPanel(3)"><img src="images/larissaPosner.jpg" width="100%"></div>
-                <div class="profile"><strong>Larrisa Posner</strong><br>Some Text Here</div>
+                <div class="profile-photo" onclick="displayPanel(3)"><img src="images/larissaPosner.png" width="100%"></div>
+                <div class="profile"><strong>Larrisa Posner</strong><br>Chief Business Officer</div>
             </div>
         </div>
         <div id="displayPanel">
@@ -144,6 +146,15 @@
         </div>
     </section>
 
+    <section id="clients">
+        <p class="main-quote">OUR CLIENTS</p>
+        <div>
+            <img src="images/client1.jpg">
+            <img src="images/client3.jpg">
+            <img src="images/client2.png">
+            <img src="images/client4.png">
+        </div>
+    </section>
 
 
 

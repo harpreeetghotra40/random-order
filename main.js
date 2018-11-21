@@ -1,7 +1,7 @@
 
 function myFunction() {
     var x = document.getElementById("nav-responsive");
-    if (x.className === "nav-collapse" && window.innerWidth < 900) {
+    if (x.className === "nav-collapse" && window.innerWidth < 1000) {
         x.className = "responsive";
     } else {
         x.className = "nav-collapse";
@@ -9,7 +9,7 @@ function myFunction() {
 }
 
 function displayPanel(y){
-    var images = ["images/robertReitzan.jpg", "images/heinHundal.jpg","images/andrewRaffensperger.jpg","images/larissaPosner.jpg"];
+    var images = ["images/robertReitzan.png", "images/heinHundal.png","images/andrewRaffensperger.png","images/larissaPosner.png"];
     document.getElementById("display-image").src = images[y];
 
     var names = ["Robert Reitzan", "Dr. Hein S. Hundal" , "Andrew Raffensperger" , "Larissa Posner"];
@@ -22,7 +22,7 @@ function displayPanel(y){
             ];
     document.getElementById("team-info").innerHTML = info[y];
 
-    var position = ["Founder", "Chief Scientist and Partner", "Engineer and Partner",""];
+    var position = ["Founder, Chief AI Officer", "Chief Scientist", "Software Engineer","Chief Business Officer"];
     document.getElementById("team-position").innerHTML = position[y];
 
     var x = document.getElementById("displayPanel");
