@@ -207,7 +207,7 @@ input[type=text], input[type=email] {
     }
 }
 @media screen and (max-width: 750px){
-    #home, #about, #team{
+    #home, #about, #team, #clients{
         margin-left: .5em;
     }
     .content-graphic img{
