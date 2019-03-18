@@ -5,6 +5,7 @@
     font-family: sans-serif;
     color: #fff;
     letter-spacing: 2px;
+    scroll-behavior: smooth;
 }
 body{
     margin-bottom: 10em;
